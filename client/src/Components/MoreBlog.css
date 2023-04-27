@@ -1,0 +1,77 @@
+/* Default styles for section */
+.section {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    padding: 20px 50px;
+}
+
+/* Styles for container */
+.container {
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.moreblog__title {
+    padding: 20px 0;
+}
+
+/* Styles for post */
+.post {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for post image */
+.post__image img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Styles for post content */
+.post__content {
+    padding: 1rem;
+}
+
+/* Styles for post title */
+.post__title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Styles for post body */
+.post__body {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Styles for post date */
+.post__date {
+    margin-top: 0;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Media query for tablet */
+@media screen and (max-width: 768px) {
+    .section {
+
+        padding: 20px 20px;
+    }
+
+    /* Change post width */
+    .container {
+
+        grid-template-columns: 1fr;
+    }
+
+    .post {
+        width: 100%;
+    }
+}
